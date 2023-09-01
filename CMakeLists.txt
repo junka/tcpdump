@@ -1333,7 +1333,7 @@ source_group("Header Files" FILES ${PROJECT_SOURCE_LIST_H})
 ######################################
 # Register targets
 ######################################
-
+include_directories(${CMAKE_SOURCE_DIR})
 add_executable(tcpdump ${TCPDUMP_SOURCE_LIST_C})
 if(NOT C_ADDITIONAL_FLAGS STREQUAL "")
     set_target_properties(tcpdump PROPERTIES COMPILE_FLAGS ${C_ADDITIONAL_FLAGS})
